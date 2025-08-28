@@ -1,8 +1,8 @@
-interface cardProps{
-    title: string;
-    content: string;
-    img:string;
-    op?: number;
+interface cardProps {
+  title: string;
+  content: string;
+  img: string;
+  op?: number;
 }
 
 
@@ -10,10 +10,10 @@ interface cardProps{
 function Card(props: cardProps) {
   return (
     <>
-    <h1>Meus Cards</h1>
-    <h2>{props.title}</h2>
-    <p>{props.content}</p>
-    <img src={props.img} alt={props.title} />
+      <h1>Meus Cards</h1>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
+      <img src={props.img} alt={props.title} />
     </>
   )
 }
